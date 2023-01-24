@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Notifications page</title>
+
+</head>
+<body>
+<main>
+
+  <div class="header">
+   <div><h1>Notifications </h1><span>3</span></div>
+    <p><a class="mark" href="">Mark all as read</a></p>
+  </div>
+    
+<div class="comment active">
+  <img src="./assets/images/avatar-mark-webber.webp" alt="">
+  <div class="comment__text">
+    <div class="comment__title"><a href="">Mark Webber</a> reacted to your recent post <a class="post" href="">My first tournament today!</a> <span class="dot"></span></div>
+    <p>  1m ago</p>
+  </div>
+</div>
+  
+<div class="comment active">
+  <img src="./assets/images/avatar-angela-gray.webp" alt="">
+  <div class="comment__text">
+    <div class="comment__title"><a href="">Angela Gray </a>followed you <span class="dot"></span></div>
+    <p>  5m ago</p>
+  </div>
+</div>
+ 
+
+<div class="comment active">
+  <img src="./assets/images/avatar-jacob-thompson.webp" alt="">
+  <div class="comment__text">
+    <div class="comment__title"> <a href=""> Jacob Thompson </a>has joined your group <a class="group" href="">Chess Club</a> <span class="dot"></span></div>
+    <p> 1 day ago</p>
+  </div>
+</div>
+ 
+
+ <div class="comment">
+  <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="">
+  <div class="comment__text">
+    <div class="comment__title"><a href=""><a href="">Rizky Hasanuddin</a> sent you a private message</div>
+    <p>   5 days ago</p>
+      <div class="comment__reply">  Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+  I'm already having lots of fun and improving my game.</div>
+  </div>
+
+</div>
+
+
+ 
+
+ <div class="comment">
+  <img src="./assets/images/avatar-kimberly-smith.webp" alt="">
+  <div class="comment__text">
+    <div class="comment__title"> <a href=""> Kimberly Smith</a> commented on your picture </div>
+    <p> 1 week ago</p>
+  </div>
+  <img class="chess" src="./assets/images/image-chess.webp" alt="">
+</div>
+ 
+  
+   <div class="comment">
+  <img src="./assets/images/avatar-nathan-peterson.webp" alt="">
+  <div class="comment__text">
+    <div class="comment__title">  <a href="">Nathan Peterson</a> reacted to your recent post <a class="post" href="">5 end-game strategies to increase your win rate</a></div>
+    <p> 2 weeks ago</p>
+  </div>
+</div>
+
+ <div class="comment">
+  <img src="./assets/images/avatar-anna-kim.webp" alt="">
+  <div class="comment__text">
+    <div class="comment__title">  <a href=""> Anna Kim</a> left the group <a class="group" href="">Chess Club</a></div>
+    <p>   2 weeks ago</p>
+  </div>
+</div>
+
+
+  
+
+
+
+  
+
+</main>
+
+<script>
+  const mark = document.querySelector('.mark');
+  const comment = document.querySelectorAll('.active');
+  const dot = document.querySelectorAll('.dot');
+
+
+  mark.addEventListener('click', function(e) {
+    e.preventDefault();
+    comment.forEach(com => com.classList.remove('active'));
+    dot.forEach(dot => dot.classList.remove('dot'));
+  })
+
+  console.log(comment);
+</script>
+</body>
+</html>

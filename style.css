@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: hsl(219, 12%, 42%);
+}
+a:hover {
+	color: hsl(219, 85%, 26%);
+}
+
+body {
+	margin: 0 auto;
+	width:80%;
+	max-width: 1440px;
+	background-color: hsl(210, 60%, 98%);
+	font-size: 16px;
+	display: flex;
+	align-items: center;
+	/*height: 100vh;*/
+	font-family: Plus Jakarta Sans, sans-serif;
+	color: hsl(219, 12%, 42%);
+
+}
+
+main {
+	margin: 0 auto;
+	width: 715px;
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 20px;
+	box-shadow: 1px 1px 5px #6666;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #000;
+	margin-bottom: 20px;
+}
+
+.header div {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.header span {
+	background-color: hsl(219, 85%, 26%);
+	color: #fff;
+	padding: 5px 10px;
+	display: inline-block;
+	font-size: 1.25rem;
+	border-radius: 10px;
+	font-weight: 800;
+}
+
+.comment {
+	display: flex;
+	padding: 15px;
+	border-radius: 10px;
+	margin-bottom: 7px;
+}
+
+.comment img {
+	width: 40px;
+	height: 40px;
+	margin-right: 10px;
+
+}
+
+.comment__title a {
+	font-weight: 800;
+	color: #000;
+}
+
+.comment__text p {
+	color: hsl(219, 14%, 63%);
+}
+
+.comment__title a:hover {
+	color: hsl(219, 85%, 26%);
+}
+
+.comment__title .post {
+	color: hsl(219, 12%, 42%);
+}
+
+.comment__title .group {
+	color: hsl(219, 85%, 26%);
+}
+
+.comment__reply {
+padding: 10px;
+border-radius: 5px;
+margin-top: 10px;
+border: 1px solid #6666;
+}
+
+.comment__reply:hover {
+	background-color: hsl(211, 68%, 94%);
+	cursor: pointer;
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+  background-color: hsl(1, 90%, 64%);
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.chess {
+	margin-left: 200px;
+}
+
+.active {
+	background-color: hsl(211, 68%, 94%);
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+	body {
+		max-width: 375px;
+		width: 100%;
+	
+	}
+
+	main {
+		width: 100%;
+	}
+
+	.chess {
+	margin-left: 100px;
+}
+}
