@@ -14,7 +14,7 @@
 <main>
 
   <div class="header">
-   <div><h1>Notifications </h1><span>3</span></div>
+   <div><h1>Notifications </h1><span class="notifi">3</span></div>
     <p><a class="mark" href="">Mark all as read</a></p>
   </div>
     
@@ -97,12 +97,15 @@
   const mark = document.querySelector('.mark');
   const comment = document.querySelectorAll('.active');
   const dot = document.querySelectorAll('.dot');
+  const notifi = document.querySelector('.notifi');
+
 
 
   mark.addEventListener('click', function(e) {
     e.preventDefault();
     comment.forEach(com => com.classList.remove('active'));
     dot.forEach(dot => dot.classList.remove('dot'));
+    notifi.style.display = "none";
   })
 
   console.log(comment);

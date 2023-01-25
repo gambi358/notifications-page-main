@@ -22,7 +22,7 @@ body {
 	font-size: 16px;
 	display: flex;
 	align-items: center;
-	/*height: 100vh;*/
+	height: 100vh;
 	font-family: Plus Jakarta Sans, sans-serif;
 	color: hsl(219, 12%, 42%);
 
@@ -119,6 +119,7 @@ border: 1px solid #6666;
 
 .chess {
 	margin-left: 200px;
+	margin-right: 0;
 }
 
 .active {
